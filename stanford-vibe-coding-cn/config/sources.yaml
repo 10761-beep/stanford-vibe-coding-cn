@@ -1,0 +1,40 @@
+# Stanford Vibe Coding 课程资料抓取配置
+# 使用方式: python scripts/fetch_course.py --config config/sources.yaml --output source/
+
+# 课程页面来源列表
+sources:
+  - id: cs146s-syllabus
+    name: CS146S The Modern Software Developer - 官方课程页
+    url: https://themodernsoftware.dev/
+    type: course_homepage
+    output: cs146s-syllabus.md
+
+  - id: tech36b-syllabus
+    name: TECH 36 B Vibe Coding - 教学大纲 (Google Docs)
+    url: https://docs.google.com/document/d/1EzHq_IB7g06ToeBW399ZE7j-ECGq-dE3P7sMuYOpTEA/mobilebasic
+    type: google_doc
+    output: tech36b-syllabus.md
+
+  - id: tech42-course-info
+    name: TECH 42 Vibe Coding - 课程介绍页
+    url: https://continuingstudies.stanford.edu/courses/detail/20261_TECH-42
+    type: course_detail
+    output: tech42-course-info.md
+
+  - id: cs193t-syllabus
+    name: CS193T Thinking with AI - 课程大纲
+    url: https://web.stanford.edu/class/archive/cs/cs193t/cs193t.1272/course/syllabus
+    type: course_homepage
+    output: cs193t-syllabus.md
+
+# GitHub 仓库（手动克隆，不做自动抓取）
+github_repos:
+  - id: cs146s-assignments
+    name: CS146S GitHub Assignments
+    url: https://github.com/mihail911/modern-software-dev-assignments
+    description: Weekly programming assignments for CS146S
+    clone_command: git clone https://github.com/mihail911/modern-software-dev-assignments.git
+
+# 抓取礼貌性设置
+request_delay_seconds: 2
+user_agent: Mozilla/5.0 (compatible; CourseFetcher/1.0; Educational Use)

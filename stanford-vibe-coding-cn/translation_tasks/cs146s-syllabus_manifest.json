@@ -1,0 +1,25 @@
+{
+  "input_file": "source/cs146s-syllabus.md",
+  "output_file": "translated/cs146s-syllabus-zh.md",
+  "total_chunks": 3,
+  "chunks": [
+    {
+      "index": 1,
+      "file": "translation_tasks/cs146s-syllabus_chunk_01.md",
+      "chars": 2739,
+      "status": "pending"
+    },
+    {
+      "index": 2,
+      "file": "translation_tasks/cs146s-syllabus_chunk_02.md",
+      "chars": 2659,
+      "status": "pending"
+    },
+    {
+      "index": 3,
+      "file": "translation_tasks/cs146s-syllabus_chunk_03.md",
+      "chars": 1002,
+      "status": "pending"
+    }
+  ]
+}
